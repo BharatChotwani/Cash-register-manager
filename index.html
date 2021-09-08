@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cash register app</title>
 </head>
 <body>
@@ -19,6 +20,8 @@
 
         <button id="check">check</button>
 
+        <div id="error-message"></div>
+
         <table class="change-table">
             <caption>Return change</caption>
             <tr>
@@ -27,13 +30,23 @@
             </tr>
             <tr>
                 <th>Notes</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="NumofNotes"></td>
+                <td class="NumofNotes"></td>
+                <td class="NumofNotes"></td>
+                <td class="NumofNotes"></td>
+                <td class="NumofNotes"></td>
+                <td class="NumofNotes"></td>
+                <td class="NumofNotes"></td>
+            </tr>
+            <tr>
+                <th>note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
             </tr>
         </table>
     </div>
