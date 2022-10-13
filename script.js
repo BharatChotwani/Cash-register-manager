@@ -7,10 +7,15 @@ const NumofNotes = document.querySelectorAll(".NumofNotes");
 
 checkBtn.addEventListener("click", function validateBillAndCashAmount() {
     message.style.display = "none";
-    if (billAmount.value > 0) {
-        console.log(billAmount.value)
-        if (Number(cashGiven.value) >= Number(billAmount.value)) {
-            const amountToBeReturned = cashGiven.value - billAmount.value;
+    const billAmountValue = billAmount.value ;
+    const cashAmountValue = cashGiven.value;
+    if(billAmountValue === cashAmountValue){
+        showMessage("There is no change to return!!!");
+    }
+    if (billAmountValue > 0) {
+        console.log(billAmountValue)
+        if (Number(cashAmountValue) >= Number(billAmountValue)) {
+            const amountToBeReturned = cashAmountValue - billAmountValue;
             calculateChange(amountToBeReturned);
         }
         else{
